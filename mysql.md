@@ -24,8 +24,7 @@ Update host-user
 
 `mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql`
 
-
-# In `/etc/mysql/my.cnf` add following line under [mysqld] config group:
+In `/etc/mysql/my.cnf` add following line under [mysqld] config group:
 
 [mysqld]
 
