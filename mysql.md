@@ -14,3 +14,7 @@ Update host-user
 Права на перегляд і редагування. Не дозволено видаляти ні таблиці ні записи
 
 `GRANT SELECT,UPDATE,INSERT,CREATE,ALTER,INDEX,EVENT,TRIGGER,LOCK TABLES,REFERENCES ON database . * TO 'root'@'localhost';`
+
+Змінити пароль
+
+`ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpass';FLUSH PRIVILEGES;`
