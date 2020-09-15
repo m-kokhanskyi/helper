@@ -18,3 +18,15 @@ Update host-user
 Змінити пароль
 
 `ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpass';FLUSH PRIVILEGES;`
+
+
+Установка TimeZone
+
+`mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql`
+
+
+# In `/etc/mysql/my.cnf` add following line under [mysqld] config group:
+
+[mysqld]
+
+`default-time-zone=Europe/Kiev`
